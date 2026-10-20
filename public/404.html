@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page not found | Valentina D'Ambrosio</title>
+    <meta name="description" content="That page is not here — but the work, the story and the contact details still are." />
+    <!-- a 404 must never be indexed, or it competes with the real pages -->
+    <meta name="robots" content="noindex, follow" />
+    <!-- Root-absolute paths, unlike the other pages. This one is served AT the
+         address that was not found, which can be any depth: from
+         /somewhere/gone a relative legal.css would resolve to
+         /somewhere/legal.css and the page would render unstyled with dead
+         links. Assumes the site sits at the domain root, which is what
+         npm run set-domain and the GitHub Pages setup in DEPLOY.md give you. -->
+    <meta name="theme-color" content="#F7F3EC" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'" />
+    <link rel="icon" href="/portfolio/favicon.ico" sizes="48x48" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/portfolio/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/portfolio/apple-touch-icon.png" />
+    <link rel="stylesheet" href="/portfolio/legal.css" />
+    <style>
+      body { display: grid; place-items: center; }
+      .shell { padding-block: clamp(2rem, 6vw, 4rem); max-width: 46rem; }
+      .lede { margin-top: 1.75rem; }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <p class="eyebrow r">Error 404</p>
+
+      <h1 class="r">This page took <em>a wrong turn.</em></h1>
+
+      <p class="lede r">
+        The link may be broken, or the page may have moved. Everything else is
+        still exactly where you left it.
+      </p>
+
+      <div class="actions r">
+        <a class="btn btn-solid" href="/portfolio/">
+          Back to home
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+        </a>
+        <a class="btn btn-line" href="/portfolio/#work">See the work</a>
+      </div>
+
+      <p class="meta r">
+        Looking for something specific? <a href="/portfolio/#contact">Get in touch</a> and
+        I'll point you to it.
+      </p>
+    </main>
+  </body>
+</html>

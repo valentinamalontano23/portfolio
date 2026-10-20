@@ -1,0 +1,13 @@
+{
+  "name": "Valentina D'Ambrosio — Travel, Hospitality & UGC Creator",
+  "short_name": "Valentina D'Ambrosio",
+  "description": "Italian travel and lifestyle creator making short-form video and UGC for hotels, destinations and travel brands.",
+  "start_url": "./",
+  "display": "browser",
+  "theme_color": "#F7F3EC",
+  "background_color": "#F7F3EC",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

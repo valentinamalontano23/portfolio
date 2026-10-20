@@ -1,0 +1,10 @@
+# Valentina D'Ambrosio — portfolio
+# The whole site is meant to be found: it exists to be contacted.
+
+User-agent: *
+Allow: /
+
+# No value to anyone, and it would compete with the real pages in search
+Disallow: /404.html
+
+Sitemap: https://valentinamalontano23.github.io/portfolio/sitemap.xml

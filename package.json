@@ -1,0 +1,26 @@
+{
+  "name": "valentina-dambrosio-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Premium travel, lifestyle & UGC creator portfolio for Valentina D'Ambrosio",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "set-domain": "node scripts/set-domain.mjs",
+    "standalone": "vite build --config vite.standalone.config.js && node scripts/inline-single-file.mjs"
+  },
+  "dependencies": {
+    "framer-motion": "^13.1.1",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.1",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.19",
+    "vite": "^8.2.2"
+  }
+}

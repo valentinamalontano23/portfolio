@@ -1,0 +1,7 @@
+node_modules
+dist
+shots
+.DS_Store
+
+# the one-file offline copy: built on demand, never deployed
+standalone

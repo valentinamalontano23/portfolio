@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentina D'Ambrosio — Travel, Hospitality &amp; UGC Creator</title>
+    <meta
+      name="description"
+      content="Italian travel and lifestyle creator making short-form video and UGC for hotels, destinations and travel brands. See the work and get in touch."
+    />
+    <meta name="author" content="Valentina D'Ambrosio" />
+    <meta name="theme-color" content="#F7F3EC" />
+
+    <!-- favicon.ico carries 16/32/48 for browsers and Windows that still
+         ask for it by that name; the PNGs are what modern browsers pick. -->
+    <link rel="icon" href="./favicon.ico" sizes="48x48" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16.png" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <!-- any subresource that somehow resolves to http:// is fetched over https
+         instead of being blocked as mixed content. A real http->https redirect
+         and HSTS can only be done by the host; see DEPLOY.md. -->
+    <!-- The browser now enforces what the privacy policy promises: every
+         script, style, image, font and video must come from this site and
+         nowhere else. If anything ever tried to call out to a third party —
+         an analytics snippet, a pixel, a font CDN — it would simply be
+         refused rather than silently sending the visitor's IP address away.
+
+         There is deliberately no upgrade-insecure-requests here. It was
+         redundant — default-src 'self' already refuses an http:// URL, since
+         a different scheme is a different origin — and on a plain-http local
+         server some browsers apply it to the page's own files and serve
+         nothing at all. Sending a visitor who typed http:// to https is the
+         host's job either way; see DEPLOY.md.
+
+         If you ever add a YouTube or Vimeo embed, frame-src 'none' will
+         block it. Change that one directive to name the provider. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'" />
+    <link rel="canonical" href="https://valentinamalontano23.github.io/portfolio/" />
+
+    <!-- the hero photograph is the largest element on the first screen;
+         without this the browser only discovers it after app.js has run -->
+    <link rel="preload" as="image" href="./hero-coast.webp" fetchpriority="high" />
+
+    <meta property="og:url" content="https://valentinamalontano23.github.io/portfolio/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Valentina D'Ambrosio — Travel, Hospitality &amp; UGC Creator" />
+    <meta
+      property="og:description"
+      content="Travel, hospitality and lifestyle content that feels like a story — not an ad. Available for UGC, destination campaigns and hotel collaborations."
+    />
+    <meta property="og:image" content="https://valentinamalontano23.github.io/portfolio/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Valentina D&#39;Ambrosio — travel, lifestyle and UGC creator" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- fonts are self-hosted; see the @font-face block in src/index.css -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Valentina D'Ambrosio",
+        "jobTitle": "Travel, Lifestyle & UGC Creator",
+        "nationality": "Italian",
+        "sameAs": ["https://instagram.com/va_lentina_ma_lontano"],
+        "knowsAbout": [
+          "travel UGC creator",
+          "hospitality content creator",
+          "destination storytelling",
+          "short-form social video"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <!-- React replaces everything in here the moment it mounts, so this is
+           only ever seen when the script did not run: JavaScript turned off,
+           or the file opened straight from disk, where the browser refuses to
+           load a module. Without it that case is a silent white page, which
+           tells nobody anything. -->
+      <div style="max-width: 32rem; margin: 18vh auto; padding: 0 1.5rem; font-family: system-ui, sans-serif; color: #172a3a; line-height: 1.6">
+        <p style="font-size: 0.68rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: #c9684b; margin: 0 0 1rem">
+          Valentina D'Ambrosio
+        </p>
+        <h1 style="font-size: 1.5rem; font-weight: 600; margin: 0 0 1rem">This page needs JavaScript.</h1>
+        <p style="margin: 0 0 1rem">
+          If you have it switched off, turn it on and reload.
+        </p>
+        <p style="margin: 0; color: #5b6b78; font-size: 0.92rem">
+          If you opened this file by double-clicking it, that is the reason:
+          a browser will not load a page's code from a file on disk. Serve the
+          folder instead — <code style="background: #ece6dc; padding: 0.15em 0.45em; border-radius: 4px">npm run preview</code> —
+          and open the address it prints.
+        </p>
+      </div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
